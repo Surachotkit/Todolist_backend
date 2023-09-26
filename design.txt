@@ -1,0 +1,29 @@
+REGISTER 
+POST /auth/register
+BODY username, password, confirmPassword, email?
+
+LOGIN
+POST /auth/login
+BODY username, password
+
+
+CREATE TODO
+POST /todo
+AUTHORIZATION: BEARER ACCESS_TOKEN
+BODY title, completed?, dueDate?
+RESPONSE 
+200 MESSAGE
+400, 401 MESSAGE
+500 MESSAGE
+
+
+
+UPDATE TODO
+/todo
+
+
+DELETE TODO BY ID 
+
+GET ALL TODO
+
+GET TODO BY ID 
